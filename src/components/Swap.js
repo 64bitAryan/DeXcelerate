@@ -183,7 +183,7 @@ const Swap = () => {
           </div>
         </div>
       </Modal>
-      <div className="fle z-50 flex-col w-[35%] rounded-xl bg-[#111524] p-4">
+      <div className="fle z-50 flex-col lg:w-[35%] w-[60%] rounded-xl bg-[#111524] p-4">
         <button
           onClick={togglePopup}
           className="flex w-full mb-1 p-3 bg-gradient-to-r from-indigo-500/10 to-purple-500/10 saturate-[2] hover:from-indigo-400/10 hover:to-purple-400/10 rounded-lg cursor-pointer justify-center items-center font-semibold text-lg text-white"
@@ -247,7 +247,7 @@ const Swap = () => {
         </button>
       </div>
       {loadin ? <Loader message={swapMessage} /> : <></>}
-      <div className="flex w-[35%] flex-col rounded-lg m-1 border bg-[#111524] border-slate-600">
+      <div className="flex lg:w-[35%] w-[60%] flex-col rounded-lg m-1 border bg-gradient-to-r from-[#324193] to-[#0a6e9b] border-slate-600">
         <div className="flex w-full px-2 py-1 text-sm font-semibold border-b border-slate-600 font-poppins text-white bg-gradient-to-r from-indigo-500/10 to-purple-500/10 saturate-[2] hover:from-indigo-400/10 hover:to-purple-400/10 rounded-t">
           Last transaction #
         </div>

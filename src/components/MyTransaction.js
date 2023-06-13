@@ -38,9 +38,9 @@ const MyTransaction = () => {
       className="flex w-screen flex-col bg-[#131a2a] h-screen justify-center items-center"
     >
       <div className="absolute inset-0 bg-gradient-to-b bg-primary opacity-60"></div>
-      <div className="w-[75%] h-[80%] mt-16 bg-[#1c2c50] rounded-lg flex flex-col">
+      <div className="w-[75%] h-[80%] mt-16 bg-gradient-to-r from-[#324193] to-[#0a6e9b] saturate-100 rounded-lg flex flex-col">
         <div className="z-50 flex-col">
-          <div className="w-full rounded-t-lg border-b border-slate-600 p-2 flex flex-row justify-between">
+          <div className="w-full rounded-t-lg border-b border-slate-300 p-2 flex flex-row justify-between">
             <div className=" text-white font-semibold font-poppins flex flex-row">
               <h3 className="px-2">Sr no.</h3>
               <h3 className="px-10">Transaction Hash</h3>

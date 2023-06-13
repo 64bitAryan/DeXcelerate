@@ -72,7 +72,7 @@ function CreatePair() {
             onChange={setToken1}
             placeholder="Token address 1"
             className="border-none bg-transparent w-full placeholder:text-2xl font-bold text-white text-2xl p-2 m-1 rounded-md focus:outline-none focus:ring-0"
-          ></input>
+          />
           <div className="text-white font-semibold text-sm mx-[0.40rem] px-2">
             {firstTokenName}
           </div>
@@ -85,7 +85,7 @@ function CreatePair() {
             onChange={setToken2}
             placeholder="Token address 2"
             className="border-none bg-transparent w-full placeholder:text-2xl font-bold text-white text-2xl p-2 m-1 rounded-md focus:outline-none focus:ring-0"
-          ></input>
+          />
           <div className="text-white font-semibold text-sm mx-[0.40rem] px-2">
             {secondTokenName}
           </div>

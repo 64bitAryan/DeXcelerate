@@ -16,13 +16,6 @@ const main = async () => {
 
   console.log(`Router deployed to: ${router.address}`);
 
-  const Handler = await hre.ethers.getContractFactory("Handler");
-  const handler = await Handler.deploy(process.env.factory, process.env.router);
-  await handler.deployed();
-
-  console.log(`Handler deployed to: ${handler.address}`);
-  /*________________________________________________________________*/
-
   const InitGenerator = await hre.ethers.getContractFactory(
     "InitCodeHashGenerator"
   );
@@ -30,6 +23,12 @@ const main = async () => {
   await generator.deployed();
 
   console.log(`Generator deployed to: ${generator.address}`);
+  /*________________________________________________________________*/
+  const Handler = await hre.ethers.getContractFactory("Handler");
+  const handler = await Handler.deploy(process.env.factory, process.env.router);
+  await handler.deployed();
+
+  console.log(`Handler deployed to: ${handler.address}`);
 };
 
 main().catch((error) => {

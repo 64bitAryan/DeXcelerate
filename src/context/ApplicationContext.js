@@ -237,7 +237,6 @@ export const ApplicationProvider = ({ children }) => {
         method: "wallet_switchEthereumChain",
         params: [{ chainId: ethers.utils.hexlify(chainId) }],
       });
-      // window.location.reload();
       return 1;
     } catch (error) {
       if (error.code === 4902) {
