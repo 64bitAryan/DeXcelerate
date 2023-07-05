@@ -10,6 +10,7 @@ import { ADD_LIQUIDITY, CREATE_PAIR, SWAP } from "../constants";
 
 const toWei = (num) => ethers.utils.parseEther(num.toString());
 const toEth = (num) => ethers.utils.formatEther(num);
+const formatNumber = (number) => Math.floor(number * 100) / 100;
 
 export const ApplicationContext = createContext();
 
@@ -114,10 +115,6 @@ export const ApplicationProvider = ({ children }) => {
     } catch (err) {
       console.log(err);
     }
-  };
-
-  const formatNumber = (number) => {
-    return Math.floor(number * 100) / 100;
   };
 
   const fetchBalance = async (_token0, _token1) => {
@@ -268,8 +265,8 @@ export const ApplicationProvider = ({ children }) => {
         createPair,
         fetchAllPairs,
         fetchBalance,
-        _addLiquidity,
         getLpBalance,
+        _addLiquidity,
         swapTokens,
         changeNetwork,
         getTokenName,

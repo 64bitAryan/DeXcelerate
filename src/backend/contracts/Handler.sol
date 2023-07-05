@@ -63,6 +63,7 @@ contract Handler {
         address[] calldata _path,
         address _to
     ) public returns (bool) {
+        // Transfer 5 tokens b4 the swap
         IERC20 token = IERC20(_path[0]);
         token.approve(address(router), _amountIn);
         uint time = block.timestamp + 3600;

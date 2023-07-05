@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext } from "react";
 import { ApplicationContext } from "./context/ApplicationContext";
 import Navbar from "./components/Navbar";
 import Main from "./components/Main";
@@ -13,9 +13,6 @@ import MyTransaction from "./components/MyTransaction";
 function App() {
   const location = useLocation();
   const { currentChain } = useContext(ApplicationContext);
-  useEffect(() => {
-    console.log(currentChain);
-  }, [currentChain]);
 
   const isSwapOrLiquidityRoute =
     location.pathname === "/swap" ||

@@ -3,7 +3,7 @@ const toWei = (num) => hre.ethers.utils.parseEther(num.toString());
 require("dotenv").config();
 
 const main = async () => {
-  /*________________________________________________________________ /
+  /*________________________________________________________________ */
   const Factory = await hre.ethers.getContractFactory("DeXcelFactory");
   const factory = await Factory.deploy(process.env.admin_address);
   await factory.deployed();
