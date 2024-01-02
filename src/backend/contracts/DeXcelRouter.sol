@@ -63,7 +63,7 @@ contract DeXcelRouter is IDeXcelRouter {
                     reserveA
                 );
                 assert(amountAOptimal <= amountADesired);
-                require(
+                re quire(
                     amountAOptimal >= amountAMin,
                     "DeXcelRouter: INSUFFICIENT_A_AMOUNT"
                 );
